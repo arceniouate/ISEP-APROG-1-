@@ -1,0 +1,3 @@
+vivaldo@conas.com;  Vivaldo Matu---Linha incorreta n de campos!
+mauca@gmail.com; Maucua Farida ; 14/10/1985---Linha incorreta n de campos!
+ ---O número de elementos da equipa está incorreto

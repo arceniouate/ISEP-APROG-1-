@@ -1,0 +1,6 @@
+110  - Estrategia -   150
+120   - Estrategia -  200
+210   - Aventura -    180
+220   - Acao -        100
+330   - Acao -        120
+115   - Aventura -    128
