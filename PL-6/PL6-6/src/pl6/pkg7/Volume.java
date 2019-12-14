@@ -5,50 +5,50 @@
  */
 package pl6.pkg7;
 
+import java.awt.BorderLayout;
 import java.util.Scanner;
 
 /**
  *
  * @author arccenio
  */
-public class PL67 {
+public class Volume {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         Scanner l = new Scanner(System.in);
-;
+        ;
         String s;
 
         do {
 
-            System.out.println("INSIRA O TIP DE SOLIDO!"
-                    + "PARA TERMINAR INSIRA FIM ");
+            System.out.println("INSIRA O TIP DE SOLIDO!" + "PARA TERMINAR INSIRA FIM ");
+            System.out.println("Esfera,Cilindro,Clone");
             s = l.next();
             if (s.equals("Esfera")) {
-                System.out.println("INSIRA A DIMENSAO");
+                System.out.println("Insira o Raio  ");
                 int r = l.nextInt();
                 double rest = vesfera(r);
                 System.out.println("Volume da esfera =" + rest);
 
             } else if (s.equals("Cilindro")) {
-                System.out.println("insira o valor do R");
+                System.out.println("insira o valor do Raio");
                 int r = l.nextInt();
                 System.out.println("insira o valor da Altura ");
                 double a = l.nextDouble();
                 double rest = Vcilindro(r, a);
                 System.out.println("Volume do cilindro =" + rest);
 
-            }else if(s.equals("Clone")){
+            } else if (s.equals("Clone")) {
                 System.out.println("Insira o Raio");
-                Double r=l.nextDouble();
-                System.out.println("Insira a altura ");
-                double al=l.nextDouble ();
-                 Double re=Vclone( r,al);
-                 System.out.println("Volume do Clone ="+re);
-                      
-                 
+                Double r = l.nextDouble();
+                System.out.println("Insira a Altura ");
+                double al = l.nextDouble();
+                Double re = Vclone(r, al);
+                System.out.println("Volume do Clone =" + re);
+
             }
 
         } while (!s.equals("FIM"));
@@ -67,7 +67,9 @@ public class PL67 {
     static double Vcilindro(int R, double altura) {
         return 3.14 * Math.pow(R, 2) * altura;
     }
-    static  double  Vclone(double r ,double al){
-        return 1 / 3 * 3.14 * (Math.pow(r,2)) * al;
+
+    static double Vclone(double r, double al) {
+        
+        return 0.3 * 3.14 * (Math.pow(r, 2)) * al;
     }
 }
