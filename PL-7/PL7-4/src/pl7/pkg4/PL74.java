@@ -23,7 +23,7 @@ public class PL74 {
         nEle = l.nextInt();
         int[] v = new int[nEle];
         int[] vc = redyNumber(v);
-        //System.out.println("numeros inseridos ");
+        System.out.println("numeros inseridos ");
         for (int i = 0; i < vc.length; i++) {
             System.out.printf(" %d ",vc[i]);
         }
@@ -63,7 +63,9 @@ public class PL74 {
     }
 
     public static void mostrar(int[] v) {
+        
         System.out.println("  ");
+        System.out.println("Vetor invertifo");
         for (int i = 0; i < v.length; i++) {
             System.out.printf(" %d ", v[i]);
 
@@ -89,6 +91,7 @@ public class PL74 {
 
     public static void mostrarD(int[] p) {
         System.out.println("  ");
+        System.out.println("Vetor invertido  rodado");
         for (int i = 0; i < p.length; i++) {
 
             System.out.printf(" %d ", p[i]);
