@@ -26,10 +26,10 @@ public class PL76 {
             op = menu();
             switch (op) {
                 case 1:
-                     EnterTheV( v,max);
+                    EnterTheV(v, max);
                     break;
                 case 2:
-                     mostrar(v);
+                    mostrar(v);
                     break;
 
             }
@@ -55,14 +55,15 @@ public class PL76 {
     }
 
     /**
+     *
      * esse metodo tema afuncaor de inserir visitantes no vetor
      *
      * @param v vetor onde iremos inserir visitantes
-     */
+     */        // optei por não declarar a classe Scanner como global por motivos de seguranca
+
     static void EnterTheV(String[] v, int nEle) {
         String nome;
         int p = 0;
-        // optei por não declarar a classe Scanner como global por motivos de seguranca
         Scanner l = new Scanner(System.in);
 
         do {
@@ -71,15 +72,17 @@ public class PL76 {
             nome = l.next();
 
             v[p] = nome;
+            p++;
         } while (nEle >= 100 && !nome.equals("a"));
 
-
     }
-    static void mostrar(String []v){
-        
+
+    static void mostrar(String[] v) {
+        System.out.println("======LISTA DE NOMES DE VISITANTES======");
         for (int i = 0; i < v.length; i++) {
-            System.out.println("Lista de visitantes ");
+            if(v[i]!=null){
             System.out.println(v[i]);
+            }
         }
     }
 }
