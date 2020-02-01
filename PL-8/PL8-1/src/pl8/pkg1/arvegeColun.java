@@ -10,19 +10,48 @@ package pl8.pkg1;
  * @author arccenio
  */
 public class arvegeColun {
-    public static void meiaColuna(int [][]m){
-        int soma=0;
-        int  aux=0;
-        for (int i = 0; i < m.length; i++) {
-            for (int j = 0; j <m[i].length; j++) {
-                aux=m[j][0];
-                if (m[i][j] <aux) {
-                   aux+= m[i][j];
-                }
+
+    /**
+     * This metodo gonna calculate the arverge of the j on the metrix
+     *
+     * @param m
+     */
+    public static void meiaColuna(int[][] m) {
+       double arverege = 0;
+        int sumColun = 0;
+        System.out.println("");
+        for (int j = 0; j < m.length; j++) {
+            for (int i = 0; i < m.length; i++) {
+               
+                sumColun=m[i ][j];
+                System.out.println("   "+sumColun);
+
             }
+
+           System.out.printf("soma %d \n ",sumColun);
+                arverege=sumColun/m[j].length;
+               System.out.printf("media",arverege);
+             sumColun = 0;
+             arverege = 0;
         }
-        System.out.println(aux );
+
+      //  return arverege;
+    }
+    static void mediaGlobal(int [][]m){
+                double mediaGlobal=0;
+                int somaTotal=0;
+                for (int i = 0; i < m.length; i++) {
+                    for (int j = 0; j < m.length; j++) {
+                        somaTotal+=m[i][j];
+                        
+                        
+                        
+                    }
+        }
+                mediaGlobal=mediaGlobal/m.length;
+                
+
         
     }
-    
+
 }

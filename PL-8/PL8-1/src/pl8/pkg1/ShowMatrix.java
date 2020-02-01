@@ -11,8 +11,12 @@ package pl8.pkg1;
  * @author arccenio
  */
 public class ShowMatrix {
+    /**
+     * This class gonna show the complite matrix 
+     * @param m  a mattrix with number 
+     */
     public static void showMAtrix(int [][]m){
-    //    int [][];
+   
         System.out.println("MATRIX COMPLETA");
         for (int i = 0; i < m.length; i++) {
             System.out.printf("\n");
