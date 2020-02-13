@@ -17,41 +17,33 @@ public class arvegeColun {
      * @param m
      */
     public static void meiaColuna(int[][] m) {
-       double arverege = 0;
-        int sumColun = 0;
-        System.out.println("");
-        for (int j = 0; j < m.length; j++) {
-            for (int i = 0; i < m.length; i++) {
-               
-                sumColun=m[i ][j];
-                System.out.println("   "+sumColun);
+        for(int i = 0; i < m.length; i++){    
+            int  sumCol = 0;    
+            for(int j = 0; j < m.length; j++){    
+              sumCol = sumCol + m[j][i];    
+            }    
+            System.out.println("Sum of " + (i+1) +" column: " + sumCol);    
+        }    
+    }    
+    
+
+    //  return arverege;
+    static void mediaGlobal(int[][] m) {
+        double mediaGlobal = 0;
+        int somaTotal = 0;
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[i].length; j++) {
+                somaTotal = somaTotal + m[j][i];
 
             }
 
-           System.out.printf("soma %d \n ",sumColun);
-                arverege=sumColun/m[j].length;
-               System.out.printf("media",arverege);
-             sumColun = 0;
-             arverege = 0;
         }
+        mediaGlobal = somaTotal / m.length;
 
-      //  return arverege;
-    }
-    static void mediaGlobal(int [][]m){
-                double mediaGlobal=0;
-                int somaTotal=0;
-                for (int i = 0; i < m.length; i++) {
-                    for (int j = 0; j < m.length; j++) {
-                        somaTotal+=m[i][j];
-                        
-                        
-                        
-                    }
-        }
-                mediaGlobal=mediaGlobal/m.length;
-                
+        // System.out.println("soma " + somaTotal);
+        System.out.println("  ");
+        System.out.println("Media Global " + mediaGlobal);
 
-        
     }
 
 }

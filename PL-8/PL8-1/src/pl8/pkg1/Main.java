@@ -18,6 +18,7 @@ public class Main {
         int m[][] = {{1, 4, 2, 1}, {9, 7, 2, 2}, {1, 7, 3, 5}, {2, 5, 0, 3}, {4, 7, 2, 1}};
        ShowMatrix.showMAtrix(m);
        arvegeColun.meiaColuna(m);
+    arvegeColun.mediaGlobal(m);
        // System.out.println("Media colunas "+avarege);
        
 //        for (int i = 0; i < m.length; i++) {
