@@ -17,33 +17,21 @@ public class arvegeColun {
      * @param m
      */
     public static void meiaColuna(int[][] m) {
-        for(int i = 0; i < m.length; i++){    
-            int  sumCol = 0;    
-            for(int j = 0; j < m.length; j++){    
-              sumCol = sumCol + m[j][i];    
-            }    
-            System.out.println("Sum of " + (i+1) +" column: " + sumCol);    
-        }    
-    }    
-    
+        int sumCol = 0;
+        float media = 0;
+        System.out.println(" ");
+        System.out.println("Media de cada coluna ");
 
-    //  return arverege;
-    static void mediaGlobal(int[][] m) {
-        double mediaGlobal = 0;
-        int somaTotal = 0;
-        for (int i = 0; i < m.length; i++) {
-            for (int j = 0; j < m[i].length; j++) {
-                somaTotal = somaTotal + m[j][i];
+        for (int i = 0; i < m[0].length; i++) {// oque e isso
+            for (int j = 0; j < m.length; j++) {
+
+                sumCol = sumCol + m[j][i];
 
             }
+            media = sumCol / m.length;
+            System.out.printf(" %.2f ", media, "\n");
 
         }
-        mediaGlobal = somaTotal / m.length;
-
-        // System.out.println("soma " + somaTotal);
-        System.out.println("  ");
-        System.out.println("Media Global " + mediaGlobal);
-
     }
 
 }
