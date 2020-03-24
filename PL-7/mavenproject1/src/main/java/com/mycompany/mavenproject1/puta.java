@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package myAplication;
+package com.mycompany.mavenproject1;
 
 /**
  *
  * @author arccenio
  */
-public class Main {
+public class puta {
+    public static void main(String[] args) {
+        System.out.println("cona ");
+    }
     
 }

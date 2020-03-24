@@ -16,10 +16,7 @@ public class Main {
     public static void main(String[] args) {
         int x;
         int m[][] = {{1, 4, 2, 1}, {9, 7, 2, 2}, {1, 7, 3, 5}, {2, 5, 0, 3}, {4, 7, 2, 1}};
-       ShowMatrix.showMAtrix(m);
-       arvegeColun.meiaColuna(m);
-       mediaGlobal.mediaGlobal(m);
-       Transposta.Transposta(m);
+       
        
    
 //        for (int i = 0; i < m.length; i++) {
